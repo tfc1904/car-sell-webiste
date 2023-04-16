@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { carDetailsMocked } from './car-details-mocked';
 
 @Component({
   selector: 'app-car-cards',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarCardsComponent implements OnInit {
 
+  carDetailsMockedData = carDetailsMocked;
+
   constructor() { }
 
   ngOnInit(): void {
+    console.log('carDetailsMockedData -', this.carDetailsMockedData);
   }
 
 }
