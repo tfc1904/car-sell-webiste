@@ -5,17 +5,15 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeroesComponent } from './heroes/heroes.component';
-import { MonstersComponent } from './monsters/monsters.component';
 import { CarCardsComponent } from './car-cards/car-cards.component';
+import { FeedbackComponent } from './feedback/feedback.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeroesComponent,
-    MonstersComponent,
-    CarCardsComponent
+    CarCardsComponent,
+    FeedbackComponent
   ],
   imports: [
     BrowserModule,
