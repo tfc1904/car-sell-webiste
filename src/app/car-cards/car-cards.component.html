@@ -1,15 +1,14 @@
-<p class="testFont">car-cards works!</p>
-
-<p class="testFont2">car-cards works!</p>
-
 
 <div class="car-card-container">
 	<div class="card-skeleton" *ngFor="let car of carDetailsMockedData"
 			 (click)="showCarDetails(car.id)">
-		<div class="car-price">{{car.price}}</div>
-		<div class="car-img">
-			<img class="car-img_" src="assets/audi.jpg" alt="bmw"/>
+		<div>
+			<div class="car-price">{{car.price}}</div>
+			<div class="car-img">
+				<img class="car-img_" src="assets/audi.jpg" alt="bmw"/>
+			</div>
 		</div>
+		
 		<div class="car-detail">
 			<span>{{car.carDetail}}</span>
 		</div>
