@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { carDetailsMocked } from './car-details-mocked';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-car-cards',
@@ -10,10 +11,15 @@ export class CarCardsComponent implements OnInit {
 
   carDetailsMockedData = carDetailsMocked;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
-    console.log('carDetailsMockedData -', this.carDetailsMockedData);
+  }
+
+  showCarDetails(carId: string): void {
+    if (carId) {
+      this.router.navigate(['car-details'], {queryParams: {id: carId}});
+    }
   }
 
 }

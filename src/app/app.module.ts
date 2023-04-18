@@ -6,7 +6,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CarCardsComponent } from './car-cards/car-cards.component';
-import { FeedbackComponent } from './feedback/feedback.component';
+import { CarDetailsComponent } from './feedback/car-details.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 
 
@@ -14,7 +14,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
   declarations: [
     AppComponent,
     CarCardsComponent,
-    FeedbackComponent,
+    CarDetailsComponent,
     ContactUsComponent
   ],
   imports: [

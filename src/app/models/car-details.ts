@@ -6,4 +6,5 @@ export interface CarDetails {
   power: string;
   carDetail: string;
   year: number;
+  id: string;
 }

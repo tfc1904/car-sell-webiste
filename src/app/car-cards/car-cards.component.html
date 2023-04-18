@@ -3,10 +3,12 @@
 <p class="testFont2">car-cards works!</p>
 
 
-<div style="display: flex; flex-direction: row">
-	<div class="card-skeleton" *ngFor="let car of carDetailsMockedData">
+<div class="car-card-container">
+	<div class="card-skeleton" *ngFor="let car of carDetailsMockedData"
+			 (click)="showCarDetails(car.id)">
+		<div class="car-price">{{car.price}}</div>
 		<div class="car-img">
-			<img class="car-img_" src="assets/bmw.avif" width="300px" height="200px" alt="bmw"/>
+			<img class="car-img_" src="assets/audi.jpg" alt="bmw"/>
 		</div>
 		<div class="car-detail">
 			<span>{{car.carDetail}}</span>
