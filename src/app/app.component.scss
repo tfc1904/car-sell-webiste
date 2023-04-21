@@ -92,6 +92,24 @@ img {
   margin: 20px auto;
   font-weight: lighter;
   letter-spacing: 2px;
+  transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+  margin: 1em;
+
+
+  &.white {
+    box-shadow: inset 0 0 0.8em rgba(255,255,255,0.3), 0 0 0.8em rgba(255,255,255,0.3);
+    border: #fff solid 2px;
+  }
+
+  &.white:hover {
+    color: rgba(0,0,0,0.8);
+    background-color: #fff;
+    box-shadow: inset 0 0 0 rgba(255,255,255,0.3), 0 0 1.2em rgba(255,255,255,0.5);
+  }
+}
+
+.menu-button-cars:hover {
+  border: 2px solid red;
 }
 
 .toolbar-glasmorphic {
@@ -103,46 +121,4 @@ img {
   border: 1px solid rgba(255,255,255,0.1);
   width: 100%;
   backdrop-filter: blur(10px);
-}
-
-#social-test {
-  position: absolute;
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  font-size: 30px;
-  top: 1000px;
-  left: 1300px;
-  h2 {
-    color: #fff;
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-    font-weight: 100;
-  }
-
-  li {
-    color: rgba(167, 146, 129, 0.6);
-    list-style-type: none;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    padding: 1%;
-    border: 1px solid gold;
-    cursor: pointer;
-    margin-left: 10px;
-    margin-bottom: 20px;
-    transition: ease .3s;
-    &:hover {
-      color: rgba(167, 146, 129, 1);
-      border: 1px solid rgba(167, 146, 129, 1);
-    }
-  }
-}
-
-.social:hover > li {
-  opacity: 0.3;
-}
-
-.social:hover > li:hover {
-  opacity: 1;
 }
