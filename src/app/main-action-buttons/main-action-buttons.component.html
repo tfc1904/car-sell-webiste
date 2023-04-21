@@ -1,5 +1,6 @@
 <div *ngFor="let button of mainActionButtonsMocked" class="buttons-list">
-	<button class="action-button button-1" [routerLink]="button.redirectURL">
+	<button class="action-button button-1" [routerLink]="button.redirectURL"
+					(click)="onClick(button.section)">
 		{{button.label}}
 	</button>
 </div>

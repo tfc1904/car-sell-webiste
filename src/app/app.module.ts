@@ -6,7 +6,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CarCardsComponent } from './car-cards/car-cards.component';
-import { CarDetailsComponent } from './feedback/car-details.component';
+import { CarDetailsComponent } from './car-details/car-details.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSidenavModule} from "@angular/material/sidenav";

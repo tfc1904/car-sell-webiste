@@ -20,4 +20,10 @@ export class AppComponent {
   constructor(private observer: BreakpointObserver, private router: Router) {
   }
 
+  scrollToSection(section: string): void {
+    document.getElementById(section).scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
+
 }

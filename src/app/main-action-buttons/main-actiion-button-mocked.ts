@@ -4,26 +4,35 @@ export const mainActionButtons: MainActionButton[] = [
   {
     label: 'Stock Disponivel',
     tooltip: 'Analisa opções disponíveis',
-    redirectURL: '/cars'
+    redirectURL: '/cars',
+    section: 'available-cars'
   },
   {
     label: 'Os nossos serviços',
     tooltip: 'Analisa opções disponíveis',
-    redirectURL: '/cars'
+    redirectURL: '/cars',
+    section: 'available-services'
+
   },
   {
     label: 'Fala connosco',
     tooltip: 'Analisa opções disponíveis',
-    redirectURL: '/contact-us'
+    redirectURL: '/contact-us',
+    section: 'contact-us'
+
   },
   {
     label: 'Sobre nós',
     tooltip: 'Analisa opções disponíveis',
-    redirectURL: '/cars'
+    redirectURL: '/cars',
+    section: 'about-us'
+
   },
   {
     label: 'Feedback',
     tooltip: 'Analisa opções disponíveis',
-    redirectURL: '/feedback'
+    redirectURL: '/car-details',
+    section: 'feedback'
+
   },
 ];

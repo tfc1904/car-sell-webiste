@@ -9,14 +9,18 @@
 	<div class="action-buttons-placement">
 		<app-main-action-buttons
 			[mainActionButtonsMocked]="mainActionButtonMocked"
+			(goToSection)="scrollToSection($event)"
 		></app-main-action-buttons>
 	</div>
 </div>
 
 <div style="width: 100%">
-	<div class="content mat-elevation-z8">
-		<router-outlet></router-outlet>
-	</div>
+	<section id="available-cars"></section>
+	<app-car-cards>
+	</app-car-cards>
+	<section id="contact-us"></section>
+	<app-contact-us></app-contact-us>
+
 </div>
 
 

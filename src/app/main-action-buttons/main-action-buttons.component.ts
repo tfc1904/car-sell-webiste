@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import { mainActionButtons } from './main-actiion-button-mocked';
 import {MainActionButton} from '../models/main-action-button';
 
@@ -11,10 +11,15 @@ export class MainActionButtonsComponent implements OnInit {
 
   @Input() mainActionButtonsMocked: MainActionButton[];
 
+  @Output() goToSection: EventEmitter<string> = new EventEmitter<string>();
+
   constructor() { }
 
   ngOnInit(): void {
     console.log('mainActionButtonsMocked ->', this.mainActionButtonsMocked);
   }
 
+  onClick(value: string): void {
+    this.goToSection.emit(value);
+  }
 }
