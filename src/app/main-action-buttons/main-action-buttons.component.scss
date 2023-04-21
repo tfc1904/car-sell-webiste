@@ -4,12 +4,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column
-  border: 1px solid red;
+  flex-direction: column;
 }
 
 .action-button {
-  width: 170px;
+  width: 300px;
   height: 50px;
   display: flex;
   justify-content: center;
@@ -17,21 +16,27 @@
   align-items: center;
   color: #000;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 200;
+  letter-spacing: 2px;
   margin-left: 30px;
   margin-bottom: 30px;
   cursor: pointer;
+  font-family: "Inconsolata", monospace;
 }
 
 .button-1 {
   background-color: transparent;
-  border: 2px solid gold;
+  border: 1px solid gold;
   border-radius: 50px;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   color: #ffffff;
 }
 .button-1:hover {
-  box-shadow: 0 0 10px 0 #ebd197 inset, 0 0 20px 2px #bb9b49;
-  border: 3px solid #ebd197;
+  box-shadow: 0 0 5px 0 #ebd197 inset, 0 0 10px 2px #bb9b49;
+  border: 2px solid #ebd197;
+  color: #fff;
+  background-color: rgba(255,255,255,0.06);
+  width: 100%;
+  backdrop-filter: blur(10px);
 }

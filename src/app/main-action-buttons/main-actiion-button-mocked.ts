@@ -2,18 +2,28 @@ import {MainActionButton} from '../models/main-action-button';
 
 export const mainActionButtons: MainActionButton[] = [
   {
-    label: 'Stock Automovel',
+    label: 'Stock Disponivel',
     tooltip: 'Analisa opções disponíveis',
     redirectURL: '/cars'
   },
   {
-    label: 'Stock Automovel',
+    label: 'Os nossos serviços',
     tooltip: 'Analisa opções disponíveis',
     redirectURL: '/cars'
   },
   {
-    label: 'Stock Automovel',
+    label: 'Fala connosco',
     tooltip: 'Analisa opções disponíveis',
     redirectURL: '/cars'
   },
-]
+  {
+    label: 'Sobre nós',
+    tooltip: 'Analisa opções disponíveis',
+    redirectURL: '/cars'
+  },
+  {
+    label: 'Feedback',
+    tooltip: 'Analisa opções disponíveis',
+    redirectURL: '/cars'
+  },
+];
