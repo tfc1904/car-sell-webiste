@@ -17,7 +17,6 @@ import {MatButtonModule} from "@angular/material/button";
 import { MainActionButtonsComponent } from './main-action-buttons/main-action-buttons.component';
 import {MatTooltipModule} from "@angular/material/tooltip";
 import { SocialMediaButtonsComponent } from './social-media-buttons/social-media-buttons.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 
@@ -39,8 +38,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MatIconModule,
     MatDividerModule,
     MatButtonModule,
-    MatTooltipModule,
-    FontAwesomeModule
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
