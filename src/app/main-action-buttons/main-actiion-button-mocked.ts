@@ -14,7 +14,7 @@ export const mainActionButtons: MainActionButton[] = [
   {
     label: 'Fala connosco',
     tooltip: 'Analisa opções disponíveis',
-    redirectURL: '/cars'
+    redirectURL: '/contact-us'
   },
   {
     label: 'Sobre nós',
@@ -24,6 +24,6 @@ export const mainActionButtons: MainActionButton[] = [
   {
     label: 'Feedback',
     tooltip: 'Analisa opções disponíveis',
-    redirectURL: '/cars'
+    redirectURL: '/feedback'
   },
 ];
