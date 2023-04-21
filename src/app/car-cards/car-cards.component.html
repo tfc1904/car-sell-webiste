@@ -1,28 +1,36 @@
-
-<div class="car-card-container">
-	<div class="card-skeleton" *ngFor="let car of carDetailsMockedData"
-			 (click)="showCarDetails(car.id)">
-		<div>
-			<div class="car-price">{{car.price}}</div>
-			<div class="car-img">
-				<img class="car-img_" src="assets/audi.jpg" alt="bmw"/>
+<div>
+	
+	<img src="../../assets/bwgold.avif" alt="landing-page"
+			 style='width: 100%; height: 100%; object-fit: cover; margin-top: -1%;
+			 z-index: -1; position: relative' />
+	
+	<div class="car-card-container">
+		<div class="card-skeleton" *ngFor="let car of carDetailsMockedData"
+				 (click)="showCarDetails(car.id)">
+			<div>
+				<div class="car-price">{{car.price}}</div>
+				<div class="car-img">
+					<img class="car-img_" src="assets/audi.jpg" alt="bmw"/>
+				</div>
 			</div>
-		</div>
-		
-		<div class="car-detail">
-			<span>{{car.carDetail}}</span>
-		</div>
-		<div class="car-details">
-			<div class="car-details-first">
-				<span class="testFont">{{car.year}}</span>
-				<span class="testFont2">{{car.km}}</span>
+			
+			<div class="car-detail">
+				<span>{{car.carDetail}}</span>
 			</div>
-			<div class="car-details-second">
-				<span class="testFont">{{car.price}}</span>
-				<span class="testFont2">{{car.power}}</span>
+			<div class="car-details">
+				<div class="car-details-first">
+					<mat-icon>calendar_today</mat-icon>
+					<span class="testFont">{{car.year}}</span>
+					<span class="testFont2">{{car.km}}</span>
+				</div>
+				<div class="car-details-second">
+					<span class="testFont">{{car.price}}</span>
+					<span class="testFont2">{{car.power}}</span>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
 
 

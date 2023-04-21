@@ -1,3 +1,7 @@
+.background-color {
+  background-image: linear-gradient(to right bottom, #b0b6c2, #adb3bf, #aab0bc, #a8aeba, #a5abb7, #969ba6, #888c96, #7a7d86, #5d5f65, #414246, #27272a, #0d0d0e);
+}
+
 .car-card-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -6,7 +10,11 @@
   column-gap: 2%;
   row-gap: 2%;
   height: 105%;
-  margin-top: 1%;
+  width: 90%;
+  position: absolute;
+  top: 120%;
+  left: 6%;
+  overflow-y: auto;
 }
 
 .card-skeleton {
@@ -15,9 +23,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 300px;
-  height: 300px;
-  margin: 2%;
+  width: 400px;
+  height: 400px;
+  margin: 5%;
   background-color: aliceblue;
 }
 
@@ -28,23 +36,24 @@
   position:relative;
   top: 0;
   left: 0;
-  margin-left: 200px;
+  margin-left: 300px;
   border-top-right-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgba(255, 255, 255, 0.42);
+  // color: rgba(255, 255, 255, 0.42);
+  color: #bb9b49;
   font-family: 'Inconsolata', monospace;
   z-index: 2;
 }
 
 .card-skeleton:hover {
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  box-shadow: 0 0 10px 0 #ebd197 inset, 0 0 20px 2px #bb9b49;
   cursor: pointer;
 }
 
 .car-img {
-  width: 300px;
+  width: 400px;
   margin-top: -30px;
 }
 
@@ -56,7 +65,7 @@
 }
 
 .car-img:hover img {
-  transform: scale(1.01);
+  transform: scale(1.02);
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
